@@ -1,2 +1,2 @@
-Problems from ProjectEuler in java
+Solving problems from ProjectEuler in java
 Site: https://projecteuler.net/
