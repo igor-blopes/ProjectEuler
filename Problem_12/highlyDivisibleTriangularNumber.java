@@ -14,7 +14,7 @@ public class highlyDivisibleTriangularNumber {
 	
 	
 	public static void main(String[] args) {
-		
+		/* 20 minutes
 		long sum = 0l;
 		for(int i=1; ; i++){
 			sum += i;
@@ -27,7 +27,25 @@ public class highlyDivisibleTriangularNumber {
 			}
 		}
 		
-		System.out.println(sum);
+		System.out.println(sum);*/
+		
+		
+		long n=1l,trianguleNumber,count;
+		while(n!=0){
+			trianguleNumber = n*(n+1)/2;
+			count = 2;
+			for(int i=2; i<=Math.sqrt(trianguleNumber); i++){
+				if(trianguleNumber%i == 0){
+					count+=2;
+				}
+				if(count>=500){
+					System.out.println("Firts triangule number have over five hundred divisors: "+trianguleNumber);
+					return;
+				}
+			}
+			n++;
+		}
+		return;
 	}
 
 }
