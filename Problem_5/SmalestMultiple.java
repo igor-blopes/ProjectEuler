@@ -13,6 +13,8 @@ public class SmalestMultiple {
 	}
 
 	public static void main(String[] args) {
+		long start = System.currentTimeMillis();
+		
 		int SmalestMultiple = 0;
 		for(int i=1;;i++){
 			if(isMultiple(i)){
@@ -22,6 +24,9 @@ public class SmalestMultiple {
 		}
 		
 		System.out.println(SmalestMultiple);
+		
+		long finish = System.currentTimeMillis();
+		System.out.println("Run in: "+(finish-start)+"ms.");
 	}
 
 }
