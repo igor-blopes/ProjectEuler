@@ -28,7 +28,7 @@ public class highlyDivisibleTriangularNumber {
 		}
 		
 		System.out.println(sum);*/
-		
+		long start = System.currentTimeMillis();
 		
 		long n=1l,trianguleNumber,count;
 		while(n!=0){
@@ -45,7 +45,12 @@ public class highlyDivisibleTriangularNumber {
 			}
 			n++;
 		}
+		
+		long finish = System.currentTimeMillis();
+		System.out.println("Run in: "+(finish-start)+"ms.");
+		
 		return;
+		
 	}
 
 }
