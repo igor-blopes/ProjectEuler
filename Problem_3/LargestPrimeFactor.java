@@ -13,6 +13,8 @@ public class LargestPrimeFactor {
 	}
 
 	public static void main(String[] args) {
+		long start = System.currentTimeMillis();
+		
 		long number = 600851475143l;
 		for(int i=2; i<number; i++){
 			if(isPrime(i)){
@@ -22,6 +24,9 @@ public class LargestPrimeFactor {
 			}
 		}
 		System.out.println(number);
+		
+		long finish = System.currentTimeMillis();
+		System.out.println("Run in: "+(finish-start)+"ms.");
 	}
 
 }

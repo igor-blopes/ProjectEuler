@@ -3,6 +3,8 @@ package Problem_2;
 public class EvenFibonacciNumbers {
 
 	public static void main(String[] args) {
+		long start = System.currentTimeMillis();
+		
 		int value1= 1;
 		int value2= 1;
 		int aux = 0;
@@ -23,6 +25,9 @@ public class EvenFibonacciNumbers {
 		}
 		
 		System.out.println("\nSum result of the even-valued terms: "+sum);
+		
+		long finish = System.currentTimeMillis();
+		System.out.println("Run in: "+(finish-start)+"ms.");
 	}
 
 }

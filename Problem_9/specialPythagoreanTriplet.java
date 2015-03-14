@@ -3,6 +3,7 @@ package Problem_9;
 public class specialPythagoreanTriplet {
 
 	public static void main(String[] args) {
+		long start = System.currentTimeMillis();
 		
 		long product =0l;
 		
@@ -18,7 +19,8 @@ public class specialPythagoreanTriplet {
 			}
 		}
 		
-		
+		long finish = System.currentTimeMillis();
+		System.out.println("Run in: "+(finish-start)+"ms.");
 	}
 
 }

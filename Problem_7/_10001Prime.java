@@ -13,6 +13,8 @@ public class _10001Prime {
 	}
 	
 	public static void main(String[] args) {
+		long start = System.currentTimeMillis();
+		
 		int cont = 1;
 		int _10001Prime = 0;
 		for(int i=2;;i++){
@@ -28,6 +30,9 @@ public class _10001Prime {
 		}
 		
 		System.out.println("10001st Prime: "+_10001Prime);
+		
+		long finish = System.currentTimeMillis();
+		System.out.println("Run in: "+(finish-start)+"ms.");
 	}
 
 }

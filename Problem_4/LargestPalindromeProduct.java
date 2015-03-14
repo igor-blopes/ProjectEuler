@@ -19,6 +19,8 @@ public class LargestPalindromeProduct {
 	
 	
 	public static void main(String[] args) {
+		long start = System.currentTimeMillis();
+		
 		int largest_palindrome = 0;
 		int product = 0;
 		for(int i=100; i<1000; i++){
@@ -34,6 +36,8 @@ public class LargestPalindromeProduct {
 		
 		System.out.println(largest_palindrome);
 		
+		long finish = System.currentTimeMillis();
+		System.out.println("Run in: "+(finish-start)+"ms.");
 	}
 
 }
